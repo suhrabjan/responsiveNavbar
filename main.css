@@ -1,0 +1,158 @@
+body, html {
+  background: #fafbfc;
+  color: #58646d;
+  font-family: Open Sans, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.33333em;
+  margin: 0;
+  padding: 0;
+}
+
+body #main {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-style: 12px;
+}
+
+nav {
+  width: 400px;
+  background: #2e3d49;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  transition: transform 0.25s;
+}
+
+nav {
+  transform: translate(-400px, 0);
+}
+
+main {
+  /*width: 300px;*/
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.18rem;
+  height: 100%;
+  width: 100%;
+  line-height: 1.5em;
+  min-height: 100vh;
+  min-width: 400px;
+  position: relative;
+  transition: margin 0.25s;
+}
+
+a#menu {
+  position: absolute;
+  top: 1.5em;
+  left: .45em;
+}
+
+svg {
+  width: 40px;
+  fill: #02b3e4;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 1em;
+}
+
+nav.open {
+  transform: translate(0, 0);
+  transition: transform 0.25s;
+}
+
+main.open {
+  margin-left: 400px;
+}
+
+header {
+  background: #1c262f;
+  border-bottom: 1px solid #1c262f;
+  box-shadow: 0 2px 4px -2px rgba(0,0,0,.5);
+  height: 100px;
+  /*display: flex;*/
+}
+
+.nav_border_1 {
+  border-bottom: 1px solid #1c262f;
+}
+
+.nav_p_1 {
+  font-size: 18px;
+  padding: 1em 1em 0.5em 1em;
+  color: white;
+  margin-left: 2em;
+}
+
+.nav_p_1 div {
+  margin-bottom: 0.5em;
+}
+
+.icons {
+  list-style: none;
+  display: flex;
+}
+
+.icons li {
+  display: inline;
+  padding: .25em;
+  flex: 1;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.icons li a svg:hover {
+  /*background-color: white;*/
+  fill: white;
+}
+
+.nav_border_2 {
+  border-bottom: 1px solid #1c262f;
+}
+
+.chapters{
+  list-style-type: none;
+  /*color: hsla(0,0%,100%,.5);*/
+  /*padding: 1em;*/
+}
+
+.chapters li a p {
+  color: hsla(0,0%,100%,.5);
+  padding: 0.75em 0.5em 0.75em 0.5em;
+  font-size: 18px;
+}
+
+.chapters li a p:hover {
+  color: #fff;
+}
+
+.chapters li a {
+  text-decoration: none;
+}
+
+.videoChess {
+  text-align: center;
+  padding: 1em;
+  /*background: #1c262f;*/
+
+}
+
+@media screen and (min-width: 1125px) {
+  nav {
+    transform: translate(0, 0);
+  }
+
+  main {
+    margin-left: 400px;
+  }
+}
