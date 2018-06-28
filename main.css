@@ -29,7 +29,7 @@ nav {
   position: fixed;
   transition: transform 0.25s;
   overflow-y: scroll;
-  /*-webkit-overflow-scrolling:touch;*/
+  -webkit-overflow-scrolling:touch;
 }
 
 nav {
