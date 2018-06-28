@@ -28,10 +28,13 @@ nav {
   top: 0;
   position: fixed;
   transition: transform 0.25s;
+  overflow-y: scroll;
+  /*-webkit-overflow-scrolling:touch;*/
 }
 
 nav {
   transform: translate(-300px, 0);
+  -webkit-transform: translate(-300px, 0);
 }
 
 main {
@@ -67,6 +70,7 @@ h1 {
 }
 
 nav.open {
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
   transition: transform 0.25s;
 }
@@ -121,6 +125,9 @@ header {
   border-bottom: 1px solid #1c262f;
 }
 
+.nav_border_3 {
+}
+
 .chapters{
   list-style-type: none;
   /*color: hsla(0,0%,100%,.5);*/
@@ -155,6 +162,7 @@ header {
   height: 100%;
   top: 0px;
 }
+
 
 @media screen and (min-width: 1125px) {
   nav {
